@@ -65,7 +65,7 @@ var exampleVideoData = [{
     channelTitle: '',
     liveBroadcastContent: 'none'
   }
-}, {
+}, {
   kind: 'youtube#searchResult',
   etag: 'abQHWywil_AkNqdqji7_FqiK-u4/FZYrgJg7qfkv0yfImJPujBKBmLk',
   id: {
@@ -97,7 +97,7 @@ var exampleVideoData = [{
     channelTitle: '',
     liveBroadcastContent: 'none'
   }
-}, {
+}, {
   kind: 'youtube#searchResult',
   etag: 'abQHWywil_AkNqdqji7_FqiK-u4/nSaavPWVkTWpn2p-ClwNj7xszf8',
   id: {
@@ -129,7 +129,7 @@ var exampleVideoData = [{
     channelTitle: 'bengrunfeld',
     liveBroadcastContent: 'none'
   }
-}, {
+}, {
   kind: 'youtube#searchResult',
   etag: 'abQHWywil_AkNqdqji7_FqiK-u4/3E7u1VZ18KYyfLIA6RgI2w-7nRI',
   id: {

@@ -6,13 +6,14 @@ import exampleVideoData from '../data/exampleVideoData.js';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data: exampleVideoData, player: exampleVideoData[0] };
+    this.state = { data: exampleVideoData, current: exampleVideoData[0] };
     this.onListItemClick = this.onListItemClick.bind(this);
   }
 
   onListItemClick(event) {
-    console.log(event.target);
-    // ReactDOM.render(<VideoPlayer video={exampleVideoData[1]} />, document.getElementsByClassName("col-md-7")[0]);
+    // console.log(event.target.id);
+    this.setState(this.state.current = this.state.data[event.target.id]);
+    // ReactDOM.render(<VideoPlayer video={this.state.current} />, document.getElementsByClassName("col-md-7")[0]);
   }
 
   render() {
@@ -25,10 +26,10 @@ class App extends React.Component {
         </nav>
         <div className="row">
           <div className="col-md-7">
-            <div><VideoPlayer video={this.state.player} /></div>
+            <div><VideoPlayer video={this.state.current} /></div>
           </div>
           <div className="col-md-5">
-            <div onClick={this.onListItemClick}><VideoList videos={this.state.data} /></div>
+            <div><VideoList videos={this.state.data} onClick={this.onListItemClick} /></div>
           </div>
         </div>
       </div>
