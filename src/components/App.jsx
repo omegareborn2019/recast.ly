@@ -11,9 +11,7 @@ class App extends React.Component {
   }
 
   onListItemClick(event) {
-    // console.log(event.target.id);
     this.setState(this.state.current = this.state.data[event.target.id]);
-    // ReactDOM.render(<VideoPlayer video={this.state.current} />, document.getElementsByClassName("col-md-7")[0]);
   }
 
   render() {
