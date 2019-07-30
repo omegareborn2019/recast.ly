@@ -6,9 +6,8 @@ var searchYouTube = (options, callback) => {
     q: options.query,
     maxResults: options.max,
     key: options.key,
-    videoEmbeddable: 'true',
-    // success: callback,
-  }).done(data => callback(data.items));
+    videoEmbeddable: 'true'
+  }, (data => callback(data.items)));
 };
 
 export default searchYouTube;
