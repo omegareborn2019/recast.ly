@@ -1,10 +1,11 @@
+import exampleVideoData from '../data/exampleVideoData.js';
 import VideoListEntry from './VideoListEntry.js';
 
 var VideoList = (props) => (
   <div className="video-list">
     <div>
       {props.videos.map(video =>
-        <VideoListEntry kind={video.kind} etag={video.etag} />
+        <VideoListEntry image={video.snippet.thumbnails.default.url} key={video.snippet.title} detail={video.snippet.description} />
       )}
     </div>
   </div>
